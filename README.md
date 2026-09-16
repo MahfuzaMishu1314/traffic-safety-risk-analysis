@@ -267,6 +267,18 @@ The project includes visualizations of the main regression findings, including:
 
 The regression figures display adjusted odds ratios with **95% confidence intervals** shown where available, and use an odds-ratio reference line at **OR = 1**.
 
+### Travel Speed
+
+![Adjusted odds ratios by travel speed category](travel_speed_odds_ratio.png)
+
+### Roadway Functional Class
+
+![Adjusted odds ratios by roadway functional class](functional_class_odds_ratio.png)
+
+### Manner of Collision
+
+![Adjusted odds ratios by manner of collision](manner_collision_odds_ratio.png)
+
 ## Reproducibility
 
 The analysis was conducted using Python in Google Colab.
