@@ -265,7 +265,7 @@ The project includes visualizations of the main regression findings, including:
 - Adjusted odds ratios by roadway functional class
 - Adjusted odds ratios by manner of collision
 
-All regression figures display odds ratios with **95% confidence intervals** and use an odds-ratio reference line at **OR = 1**.
+The regression figures display adjusted odds ratios with **95% confidence intervals** shown where available, and use an odds-ratio reference line at **OR = 1**.
 
 ## Reproducibility
 
