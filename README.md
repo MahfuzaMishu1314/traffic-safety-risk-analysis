@@ -159,6 +159,58 @@ Among observations with available travel-speed information, the proportion of se
 
 This pattern was examined further using a separate logistic regression model with categorized travel speed.
 
+## Descriptive Statistics
+
+### Table 1. Descriptive distribution of severe injury by study characteristic
+
+| Characteristic | Category | Severe injury (%) |
+|---|---|---:|
+| **Urban/rural setting** | Rural | 60.00 |
+| | Urban | 44.00 |
+| **Lighting condition** | Daylight | 52.79 |
+| | Dark | 48.79 |
+| **Weather condition** | Clear weather | 50.23 |
+| | Adverse/other reported weather | 51.38 |
+| **Intersection involvement** | Non-intersection | 54.07 |
+| | Intersection | 43.58 |
+| **Functional class** | Interstate | 47.14 |
+| | Other Freeway/Expressway | 48.46 |
+| | Other Principal Arterial | 46.39 |
+| | Minor Arterial | 49.37 |
+| | Major Collector | 59.56 |
+| | Minor Collector | 64.86 |
+| | Local | 60.07 |
+| **Time period** | Night | 56.07 |
+| | Morning | 52.10 |
+| | Afternoon | 51.94 |
+| | Evening | 46.03 |
+| **Speed-related involvement** | Not speed-related | 44.15 |
+| | Speed-related | 73.92 |
+| **Travel speed** | 0–30 mph | 31.57 |
+| | 31–45 mph | 36.84 |
+| | 46–60 mph | 51.38 |
+| | 61–75 mph | 54.34 |
+| | 76–90 mph | 76.98 |
+| | 90+ mph | 78.37 |
+| **Trafficway type** | Non-Trafficway/Driveway | 33.91 |
+| | Two-Way, Not Divided | 56.50 |
+| | Two-Way Divided, Unprotected Median | 45.63 |
+| | Two-Way Divided, Positive Median Barrier | 43.85 |
+| | One-Way Trafficway | 44.78 |
+| | Two-Way, Not Divided with Continuous Left-Turn Lane | 40.41 |
+| | Entrance/Exit Ramp | 62.17 |
+| | Two-Way Divided, Unknown Median | 47.57 |
+| **Manner of collision** | Non-MVT collision | 53.51 |
+| | Front-to-Rear | 39.00 |
+| | Front-to-Front | 62.28 |
+| | Angle | 47.53 |
+| | Sideswipe, Same Direction | 37.38 |
+| | Sideswipe, Opposite Direction | 42.71 |
+| | Rear-to-Side | 40.43 |
+| | Other Collision | 36.54 |
+
+**Note:** Percentages are the within-category proportion of occupants classified as having severe injury. Variable-specific missing values were excluded from the corresponding descriptive calculation. The overall study population contained 81,269 occupants with valid injury-severity information; travel-speed categories are based on the 31,974 observations with available travel-speed information.
+
 ## Regression Results
 
 Two binary logistic regression models were developed to examine factors associated with severe injury among motor-vehicle occupants involved in fatal crashes.
@@ -174,6 +226,55 @@ Model 1 included speed-related crash involvement as a binary predictor along wit
 - p-value: **< 0.001**
 
 Among occupants involved in fatal crashes, those in speed-related crashes had approximately **3.74 times the odds of severe injury** compared with those in crashes not classified as speed-related, after adjustment for the other variables included in the model.
+
+### Table 2. Clustered logistic regression results — Model 1
+
+| Variable | OR | 95% CI | p-value |
+|---|---:|---:|---:|
+| **Functional class** | | | |
+| Interstate | 1.000 | Reference | — |
+| Other Freeways/Expressways | 1.112 | 1.000–1.236 | 0.0495 |
+| Other Principal Arterial | 0.936 | 0.857–1.021 | 0.1367 |
+| Minor Arterial | 0.921 | 0.838–1.012 | 0.0861 |
+| Major Collector | 1.113 | 1.005–1.232 | 0.0400 |
+| Minor Collector | 1.234 | 1.070–1.424 | 0.0039 |
+| Local | 1.079 | 0.963–1.208 | 0.1887 |
+| **Time period** | | | |
+| Night | 1.000 | Reference | — |
+| Morning | 0.692 | 0.641–0.747 | <0.001 |
+| Afternoon | 0.672 | 0.623–0.725 | <0.001 |
+| Evening | 0.658 | 0.622–0.696 | <0.001 |
+| **Trafficway type** | | | |
+| Non-Trafficway/Driveway | 1.000 | Reference | — |
+| Two-Way, Not Divided | 1.957 | 1.615–2.372 | <0.001 |
+| Two-Way Divided, Unprotected Median | 1.750 | 1.439–2.128 | <0.001 |
+| Two-Way Divided, Positive Median Barrier | 1.546 | 1.258–1.901 | <0.001 |
+| One-Way Trafficway | 1.729 | 1.352–2.211 | <0.001 |
+| Two-Way, Not Divided with Continuous Left-Turn Lane | 1.407 | 1.150–1.722 | <0.001 |
+| Entrance/Exit Ramp | 2.964 | 2.295–3.828 | <0.001 |
+| Two-Way Divided, Unknown Median | 1.790 | 1.318–2.430 | <0.001 |
+| **Manner of collision** | | | |
+| Non-MVT collision | 1.000 | Reference | — |
+| Front-to-Rear | 0.693 | 0.649–0.739 | <0.001 |
+| Front-to-Front | 1.792 | 1.692–1.899 | <0.001 |
+| Angle | 1.264 | 1.202–1.330 | <0.001 |
+| Sideswipe, Same Direction | 0.672 | 0.604–0.746 | <0.001 |
+| Sideswipe, Opposite Direction | 0.744 | 0.645–0.859 | 0.0001 |
+| Rear-to-Side | 0.559 | 0.357–0.874 | 0.0108 |
+| Other Collision | 0.681 | 0.537–0.864 | 0.0015 |
+| **Binary predictors** | | | |
+| Rural | 1.000 | Reference | — |
+| Urban | 0.636 | 0.610–0.663 | <0.001 |
+| Daylight | 1.000 | Reference | — |
+| Dark | 0.740 | 0.698–0.784 | <0.001 |
+| Clear weather | 1.000 | Reference | — |
+| Adverse/other reported weather | 0.955 | 0.911–1.001 | 0.0527 |
+| Non-intersection | 1.000 | Reference | — |
+| Intersection | 0.708 | 0.677–0.741 | <0.001 |
+| Not speed-related | 1.000 | Reference | — |
+| Speed-related | 3.737 | 3.527–3.960 | <0.001 |
+
+**Model 1:** N = 70,705; clustered standard errors at `ST_CASE` level; pseudo R² = 0.0825. Odds ratios are adjusted for all other variables in the model.
 
 ### Model 2: Travel Speed
 
@@ -194,6 +295,60 @@ Adjusted odds ratios for travel speed were:
 The results show a clear increase in the adjusted odds of severe injury across higher travel-speed categories.
 
 The Model 2 sample is substantially smaller because travel-speed information was missing for **49,295 of the 81,269** valid injury-severity observations (**60.66%**).
+
+### Table 3. Clustered logistic regression results — Model 2
+
+| Variable | OR | 95% CI | p-value |
+|---|---:|---:|---:|
+| **Functional class** | | | |
+| Interstate | 1.000 | Reference | — |
+| Other Freeways/Expressways | 0.960 | 0.823–1.120 | 0.603 |
+| Other Principal Arterial | 1.239 | 1.084–1.415 | 0.002 |
+| Minor Arterial | 1.350 | 1.169–1.558 | <0.001 |
+| Major Collector | 1.650 | 1.408–1.933 | <0.001 |
+| Minor Collector | 1.978 | 1.597–2.452 | <0.001 |
+| Local | 1.944 | 1.633–2.315 | <0.001 |
+| **Time period** | | | |
+| Night | 1.000 | Reference | — |
+| Morning | 0.732 | 0.646–0.829 | <0.001 |
+| Afternoon | 0.720 | 0.635–0.816 | <0.001 |
+| Evening | 0.688 | 0.628–0.754 | <0.001 |
+| **Travel speed category** | | | |
+| 0–30 mph | 1.000 | Reference | — |
+| 31–45 mph | 1.171 | 1.063–1.290 | 0.0014 |
+| 46–60 mph | 1.851 | 1.679–2.040 | <0.001 |
+| 61–75 mph | 2.745 | 2.451–3.074 | <0.001 |
+| 76–90 mph | 7.496 | 6.355–8.841 | <0.001 |
+| 90+ mph | 8.485 | 7.003–10.280 | <0.001 |
+| **Trafficway type** | | | |
+| Non-Trafficway/Driveway | 1.000 | Reference | — |
+| Two-Way, Not Divided | 1.354 | 0.952–1.926 | 0.0920 |
+| Two-Way Divided, Unprotected Median | 1.179 | 0.826–1.684 | 0.3642 |
+| Two-Way Divided, Positive Median Barrier | 1.012 | 0.699–1.466 | 0.9504 |
+| One-Way Trafficway | 1.584 | 0.956–2.625 | 0.0744 |
+| Two-Way, Not Divided with Continuous Left-Turn Lane | 0.958 | 0.664–1.382 | 0.8178 |
+| Entrance/Exit Ramp | 2.470 | 1.583–3.854 | <0.001 |
+| Two-Way Divided, Unknown Median | 1.804 | 1.068–3.045 | 0.0273 |
+| **Manner of collision** | | | |
+| Non-MVT collision | 1.000 | Reference | — |
+| Front-to-Rear | 0.999 | 0.909–1.097 | 0.9798 |
+| Front-to-Front | 1.597 | 1.454–1.755 | <0.001 |
+| Angle | 1.355 | 1.247–1.473 | <0.001 |
+| Sideswipe, Same Direction | 0.705 | 0.593–0.837 | <0.001 |
+| Sideswipe, Opposite Direction | 0.580 | 0.439–0.766 | <0.001 |
+| Rear-to-Side | 1.434 | 0.503–4.090 | 0.4998 |
+| Other Collision | 0.613 | 0.361–1.043 | 0.0709 |
+| **Binary predictors** | | | |
+| Rural | 1.000 | Reference | — |
+| Urban | 0.773 | 0.721–0.829 | <0.001 |
+| Daylight | 1.000 | Reference | — |
+| Dark | 0.712 | 0.646–0.786 | <0.001 |
+| Clear weather | 1.000 | Reference | — |
+| Adverse/other reported weather | 1.017 | 0.948–1.091 | 0.6341 |
+| Non-intersection | 1.000 | Reference | — |
+| Intersection | 0.763 | 0.708–0.823 | <0.001 |
+
+**Model 2:** N = 28,437; clustered standard errors at `ST_CASE` level; pseudo R² = 0.0914. Odds ratios are adjusted for all other variables in the model.
 
 ## Key Findings
 
@@ -321,8 +476,3 @@ This project demonstrates a data-driven approach to examining factors associated
 The analysis identifies **speed-related crash involvement and higher travel-speed categories** as the strongest associations with severe injury in the study population. Roadway functional class, trafficway type, collision manner, urban/rural setting, lighting condition, and time of day also showed meaningful associations in the regression models.
 
 The results provide an analytical framework for understanding patterns in traffic injury severity and demonstrate the use of real-world crash data, statistical modeling, and reproducible data analysis for transportation safety research.
-
-
-
-
-
