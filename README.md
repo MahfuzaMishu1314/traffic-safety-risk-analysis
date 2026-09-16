@@ -6,9 +6,11 @@ This project examines roadway, environmental, temporal, vehicle, and collision-r
 
 The analysis uses the 2023 Fatality Analysis Reporting System (FARS) data from the National Highway Traffic Safety Administration (NHTSA) and applies exploratory data analysis and binary logistic regression to identify factors associated with higher or lower odds of severe injury.
 
-### Research Question
+### Research Questions
 
-**Which roadway, environmental, temporal, speed, and collision-related factors are associated with higher crash injury severity?**
+1. **Which roadway, traffic, environmental, and crash characteristics are associated with severe occupant injury in fatal crashes?**
+2. **How does travel speed relate to the odds of severe injury among occupants involved in fatal crashes?**
+3. **Do these associations remain after controlling for other crash and roadway characteristics?**
 
 ## Data Source
 
